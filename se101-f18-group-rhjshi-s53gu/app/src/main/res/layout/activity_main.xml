@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/test_button"
+        android:layout_width="99dp"
+        android:layout_height="133dp"
+        android:layout_marginBottom="424dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginStart="156dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/startbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/down_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="52dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/downedit" />
+
+    <ImageButton
+        android:id="@+id/up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:layout_marginStart="52dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/upedit" />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="96dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="39dp"
+        android:text="TextView"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test_button"
+        tools:text="200"
+        android:textColor="#ffffff"
+        android:fontFamily="monospace"
+        android:textSize="25sp"
+        android:gravity="center"/>
+</android.support.constraint.ConstraintLayout>
